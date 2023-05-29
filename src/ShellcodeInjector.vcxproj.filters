@@ -17,7 +17,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mem.cpp">
+    <ClCompile Include="memory\mem.cpp">
       <Filter>Source Files\mem</Filter>
     </ClCompile>
   </ItemGroup>
