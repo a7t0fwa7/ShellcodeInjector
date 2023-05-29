@@ -8,3 +8,5 @@ MORE C++
 # BIG THANKS TO
 guidedhacking and rake for getting me into c++/reversing <br>
 Big thanks to @cr-0w for making a blog about shellcode injection <br> (https://crows-nest.gitbook.io/crows-nest/malware-development/process-injection/shellcode-injection)
+
+# I AM NOT RESPONSIBLE FOR ANY CAUSED DAMAGE
