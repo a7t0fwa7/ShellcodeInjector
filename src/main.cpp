@@ -38,7 +38,7 @@ int main()
 
 	std::cout << "---------------- \n";
 	std::cout << "Process id: " << pid << std::endl;
-	std::cout << "Process modulebase: " << modbase << std::endl;
+	std::cout << "Process modulebase: 0x" << std::hex << modbase << std::dec << std::endl;
 	std::cout << "---------------- \n";
 
 	std::cout << "[+] Sucess! \n";
