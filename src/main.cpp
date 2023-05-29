@@ -21,12 +21,25 @@ int main()
 
 	std::cout << "[~] Getting process id... \n";
 	std::cout << "[+] note: if your entered process is not running, its about right time to run it \n";
-
+	
 	DWORD pid = 0;
 	while (pid == 0)
 	{
 		pid = mem::GetProcessId(process_name_wch);
 	}
+	
+	std::cout << "[~] Getting additional info.. \n";
+
+	uintptr_t modbase = 0;
+	while (modbase == 0)
+	{
+		modbase = mem::GetModuleBase(pid, process_name_wch);
+	}
+
+	std::cout << "---------------- \n";
+	std::cout << "Process id: " << pid << std::endl;
+	std::cout << "Process modulebase: " << modbase << std::endl;
+	std::cout << "---------------- \n";
 
 	std::cout << "[+] Sucess! \n";
 	std::cout << "[~] Getting process handle.. \n";
@@ -67,6 +80,7 @@ int main()
 	WaitForSingleObject(hThread, INFINITE);
 	std::cout << "[+] Sucess, shellcode has been injected sucessfully! \n";
 	std::cout << "------------------------------------------------------- \n";
+
 
 
 
