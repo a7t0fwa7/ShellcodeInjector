@@ -63,7 +63,7 @@ int main()
 	
 	std::cout << "[~] Writing shellcode to process.. \n";
 
-	WriteProcessMemory(proc_handle, buffer, shellcode, sizeof(buffer), nullptr);
+	WriteProcessMemory(proc_handle, buffer, shellcode, sizeof(shellcode), nullptr);
 
 	std::cout << "[+] Sucess! \n";
 	
